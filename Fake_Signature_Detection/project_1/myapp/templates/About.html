@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Signio</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Corrected Font Awesome script tag -->
+</head>
+<body style="font-family: Arial, sans-serif; background: linear-gradient(to right, #434343, #000000); margin: 0; padding: 0; display: flex; flex-direction: column; min-height: 100vh;">
+   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1a1a1a;">
+       <a class="navbar-brand" href="{% url 'mainPage' %}" style="color: #ffc107; font-weight: bold;">Signio's</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav ml-auto mr-4">
+               <li class="nav-item active">
+                   <a class="nav-link" href="{% url 'aboutPage' %}" style="color: #ffc107;">About <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="{% url 'servicesPage' %}" style="color: #ffc107;">Services</a>
+               </li>
+               <!-- <li class="nav-item"> -->
+                   <!-- <a class="nav-link" href="Home.html" style="color: #ffc107;">Home</a> -->
+               <!-- </li> -->
+               <li class="nav-item">
+                   <a class="nav-link" href="{% url 'contactPage' %}" style="color: #ffc107;">Contact Us</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="{% url 'resourcePage' %}" style="color: #ffc107;">Resources</a>
+               </li>
+           </ul>
+       </div>
+   </nav>
+
+    <div class="jumbotron text-center" style="background: linear-gradient(to right, #536976, #292e49); color: white; padding: 50px;">
+        <h1>About Signio</h1>
+        <p>Signio is a leading provider of signature detection technology, revolutionizing the way signatures are identified and processed. Our AI-driven solution sets a new standard for precision and efficiency, empowering businesses and individuals to combat fraud and safeguard their digital assets.</p>
+    </div>
+
+    <div class="container mt-5" style="max-width: 800px; background-color: #f8f9fa; border-radius: 10px; padding: 30px; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);">
+        <h2 style="color: #212529;">Welcome to Signio's</h2>
+        <p style="color: #212529;">At Signio, we are committed to excellence in everything we do. Our team consists of dedicated professionals who are passionate about leveraging technology to solve real-world problems. From our CEO to our managers, co-workers, and customers, everyone plays a vital role in our journey towards innovation and success.</p>
+        
+        <h3 style="color: #212529;">Our CEO - John Doe</h3>
+        <img src="Code.png" alt="CEO" class="profile-pic" style="max-width: 150px; border-radius: 50%; margin-bottom: 20px;">
+        <p style="color: #212529;">John Doe is the visionary leader behind Signio, with over two decades of experience in the tech industry. His passion for innovation and drive for excellence have propelled Signio to the forefront of signature detection technology.</p>
+        
+        <h3 style="color: #212529;">Our Managers</h3>
+        <div class="row">
+            <div class="col-md-4" style="text-align: center;">
+                <img src="Code.png" alt="Manager" class="profile-pic" style="max-width: 150px; border-radius: 50%; margin-bottom: 20px;">
+                <p style="color: #212529;">Emily Smith - Product Manager</p>
+            </div>
+            <div class="col-md-4" style="text-align: center;">
+                <img src="Code.png" alt="Manager" class="profile-pic" style="max-width: 150px; border-radius: 50%; margin-bottom: 20px;">
+                <p style="color: #212529;">Michael Johnson - Marketing Manager</p>
+            </div>
+            <div class="col-md-4" style="text-align: center;">
+                <img src="/project_1/myapp/templates/Code.png" alt="Manager" class="profile-pic" style="max-width: 150px; border-radius: 50%; margin-bottom: 20px;">
+                <p style="color: #212529;">Sarah Brown - Operations Manager</p>
+            </div>
+        </div>
+        
+        <h3 style="color: #212529;">Our Co-workers</h3>
+        <p style="color: #212529;">Our team of dedicated co-workers brings diverse skills and expertise to Signio. From software engineers and data scientists to UX designers and quality assurance specialists, each member of our team plays a crucial role in driving innovation and delivering exceptional results.</p>
+        
+        <h3 style="color: #212529;">Our Customers</h3>
+        <p style="color: #212529;">Our customers are at the heart of everything we do. We work closely with businesses of all sizes, from startups to Fortune 500 companies, helping them protect their digital assets and build trust with their customers. Our commitment to customer success is unwavering, and we strive to exceed their expectations every step of the way.</p>
+    </div>
+
+    <footer class="footer" style="background-color: #343a40; color: white; text-align: center; padding: 20px 0; margin-top: auto;">
+        <div class="container">
+            <p>&copy; 2024 Signio's. All rights reserved.</p>
+            <p>Designed with <i class="fas fa-heart" style="color: #e25555;"></i> by Signio Developers</p>
+        </div>
+    </footer>
+
+    <!-- Add
